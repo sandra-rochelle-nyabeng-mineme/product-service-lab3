@@ -15,12 +15,12 @@ PORT = int(os.getenv("PORT", "3030"))
 app = FastAPI()
 
 # Configurer CORS (comme warp.cors().allow_any_origin().allow_methods(["GET"]))
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],  # toutes origines
-    allow_methods=["GET"],  # seulement GET
-    allow_headers=["*"],  # tous les headers
-)
+#app.add_middleware(
+ #   CORSMiddleware,
+ #   allow_origins=["*"],  # toutes origines
+#    allow_methods=["GET"],  # seulement GET
+#    allow_headers=["*"],  # tous les headers
+#)
 
 # Route GET /products
 @app.get("/products")
