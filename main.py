@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 load_dotenv()
  
 app = Flask(__name__)
-CORS(app, resources={r"/products": {"origins": "https://zealous-rock-065f3630f.2.azurestaticapps.net"}})
+CORS(app)
 
  
 @app.get("/products")
